@@ -1,0 +1,18 @@
+{
+  "width": 1280,
+  "height": 720,
+  "font": "Microsoft YaHei",
+  "slides": [{
+    "background": "FFFFFF",
+    "elements": [
+      {"id":"title","type":"text","x":48,"y":38,"w":1184,"h":65,"text":"科研机制图：原生对象示例","fontSize":42,"bold":true,"color":"082E68"},
+      {"id":"signal","type":"shape","geometry":"roundRect","x":140,"y":280,"w":240,"h":110,"radius":18,"fill":{"gradient":[{"offset":0,"color":"DAF2FF"},{"offset":1,"color":"8DCCE9"}],"angle":90},"line":{"color":"198DBF","width":1.2}},
+      {"id":"signal-label","type":"text","x":155,"y":305,"w":210,"h":60,"text":"信号 A","fontSize":32,"bold":true,"align":"center"},
+      {"id":"activation-arrow","type":"line","x":400,"y":335,"w":200,"h":0,"line":{"color":"082E68","width":3,"endArrow":"triangle"}},
+      {"id":"response","type":"shape","geometry":"ellipse","x":630,"y":280,"w":260,"h":110,"fill":"FCE3DA","line":{"color":"EF8773","width":1.2}},
+      {"id":"response-label","type":"text","x":650,"y":305,"w":220,"h":60,"text":"细胞反应","fontSize":32,"bold":true,"color":"BD0000","align":"center"},
+      {"id":"caption","type":"text","x":48,"y":618,"w":1184,"h":54,"text":"文字、渐变形状和箭头均可分别编辑","fontSize":26,"color":"082E68"}
+    ],
+    "notes":"原创合成机制图示例。请根据实际参考图重新定位、转录并校对内容。"
+  }]
+}

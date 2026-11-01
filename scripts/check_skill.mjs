@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const text=await fs.readFile(path.join(root,'SKILL.md'),'utf8');
+if(!/^---\r?\nname: rc-science-ppt\r?\ndescription: .+\r?\n/m.test(text))throw Error('Invalid skill frontmatter');
+for(const [,ref]of text.matchAll(/\]\((references\/[^)]+)\)/g))await fs.access(path.join(root,ref));
+for(const ref of ['scripts/build_pptx.mjs','scripts/audit_pptx.py','scripts/primitives.mjs','agents/openai.yaml','LICENSE'])await fs.access(path.join(root,ref));
+if(text.includes('[TODO:'))throw Error('Unfinished skill scaffold');
+console.log('Skill entrypoint and linked resources verified');

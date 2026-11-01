@@ -1,0 +1,4 @@
+interface:
+  display_name: "RC-Science-PPT"
+  short_description: "Rebuild scientific slide images as editable PowerPoint"
+  default_prompt: "Use $rc-science-ppt to rebuild this scientific slide image as a faithful editable PowerPoint file."
