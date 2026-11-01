@@ -5,9 +5,11 @@
   "description": "Agent skill for reconstructing scientific slide images as editable PowerPoint objects.",
   "type": "module",
   "license": "MIT",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/reconstruction.test.mjs",
     "demo": "node scripts/build_demo.mjs --out build/demo",
     "check": "node scripts/check_skill.mjs"
   },
